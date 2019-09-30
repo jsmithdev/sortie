@@ -1,0 +1,22 @@
+<template>
+
+    <div 
+        class="container"
+        draggable="true"
+        title={title}
+        onclick={click}
+    >
+
+        <lightning-avatar 
+            initials="SJ" 
+            variant="square" 
+            class="slds-m-right_small"
+            title={title}
+            alternative-text={title}
+            fallback-icon-name="standard:person_account" 
+            src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg" >
+        </lightning-avatar>
+
+        <span class="title">{text}</span>
+    </div>
+</template>
