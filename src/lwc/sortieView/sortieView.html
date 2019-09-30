@@ -1,0 +1,35 @@
+<template>
+    <lightning-card>
+
+        <div class="bounds">
+            
+            <template for:each={rows} for:item="row" >
+                
+                <div key={row.Id} class="container">
+                    <template for:each={row.objects} for:item="item">
+                        
+                        <c-sortie-item
+                            key={item.Id}
+
+                            title={item.Occupant}
+                            text={item.Name}
+                            uid={item.Id}
+                            active={item.Active}
+
+                            type={item.Type}
+                            row={item.Row}
+                            col={item.Number}
+
+                            onclicked={item_clicked}
+                        ></c-sortie-item>
+                        
+                    </template>
+                </div>
+            </template>
+        </div>
+
+        <c-sortie-details
+            details={details}
+        ></c-sortie-details>
+    </lightning-card>
+</template>
