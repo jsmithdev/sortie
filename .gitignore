@@ -1,0 +1,9 @@
+.forceCode
+.history
+.sfdx
+.vscode
+
+force.json
+sfdx-project.json
+
+scratch.js

@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/sortieItem": [
+                "sortieItem/sortieItem.js"
+            ],
+            "c/sortieView": [
+                "sortieView/sortieView.js"
+            ],
+            "c/sortieDetails": [
+                "sortieDetails/sortieDetails.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../.sfdx/typings/lwc/**/*.d.ts",
+        "../../scratch.js"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}
