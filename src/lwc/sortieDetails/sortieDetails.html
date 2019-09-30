@@ -1,0 +1,31 @@
+<template>
+    
+    <template if:false={hasData}>
+
+        <div 
+            class="nodata"
+            style="font-style: italic; text-align:center; background: #EEE;"
+        >
+            nothing selected
+        </div>
+    </template>
+
+    <template if:true={hasData}>
+        
+        <h4>Selected Row: {details.row}, Col: {details.col} 🦄</h4>
+        <ul>
+            <li>uid: {details.uid}</li>
+            <li>text: {details.text}</li>
+            <li>title: {details.title}</li>
+            <li>type: {details.type}</li>
+            <li>row: {details.row}</li>
+            <li>col: {details.col}</li>
+        </ul>
+
+        <lightning-button
+            variant="brand"
+            label="Action"
+        ></lightning-button>
+    </template>
+
+</template>
